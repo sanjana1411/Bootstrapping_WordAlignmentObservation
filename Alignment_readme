@@ -1,0 +1,73 @@
+1. OBSERVATION OF SENTENCE
+   	OBSERVE THE TYPE OF SENTENCE i.e (IMPERATIVE,INTERROGATIVE,CONJUNCTION,etc.)
+   	OBSERVATION:-
+   		a) Sentence Number: 2.39 FROM Geo_chap2_E1.
+		   English Sentence: From the view point of geology, Himalayan mountains form an unstable zone.
+   		   Anu Translation: भूविज्ञान के दृष्टिकोण मतलब से, हिमालय_का पर्वत अस्थिर क्षेत्र बनाते हैं.
+   		   Man Translation: भूगर्भ वैज्ञानिकों के अनुसार हिमालय पर्वत एक अस्थिर भाग है .
+   
+  		-> TYPE OF SENTENCE : AFFIRMATIVE
+   
+    		b) Sentence number: 2.99 Geo_chap2_E1
+      		   	English Sentence:The Indus and its tributaries – the Jhelum, the Chenab, the Ravi, the Beas and the Satluj originate in the Himalaya.
+		   		Anu Translation: इन्डस और उसकी उपनदियाँ-- झेलम, चेनाब्, रवि, व्यास और सतलुज जन्म हो हिमालय में.
+		   		Man translation: सिंधु तथा इसकी सहायक नदियाँ झेलम , चेनाब , रावी , ब्यास तथा सतलुज हिमालय से निकलती हैं .
+     
+                -> TYPE OF SENTENCE: CONJUNCTION     
+##############################################################################################################################################    
+2. ISSUES RELATED TO SENTENCE
+   	TRANSLATION ISSUE: It can be observed when the words are not properly aligned in various layers.
+	OBSERVATION:-
+ 		a) Sentence Number: 2.39 FROM Geo_chap2_E1.
+		   Translation Issue:'..from the view point of geology' should be translated to 'भूविज्ञान के दृष्टिकोण से'. However, it is being translated to 'भूगर्भ वैज्ञानिकों के अनुसार'
+
+        b) Sentence number: 2.99 Geo_chap2_E1
+		   Translation Issue:'..originate in the Himalaya' is translated to 'हिमालय से निकलती  है' It should be translated to 'हिमालय से उत्पन्नहोेती है'
+ 
+ 	PARAPHRASING: Paraphrases are sentences or phrases that convey the same meaning using different wordings.
+ 		    Paraphrasing is of TWO types:
+    		1. UNNECCESARY PARAPHRASING: Unnecessary Paraphrasing arises during translation of sentences(say from ENG-HINDI) due to which sentence is unable to deliver a specific.
+	          a) Sentence Number: 2.39 FROM Geo_chap2_E
+     		  UNNECCESARY Paraphrasing- दृष्टिकोण मतलब से .However,it should be दृष्टिकोण से
+    
+   		   	2. NECCESARY PARAPHRASING: Necessary paraphrasing occurs when it becomes important to add some extra words while translation.The actual translated word could not hold or deliver a specfic meaning without forming a compound with other added word.
+   
+  	E CONSTRUCTION: Construction of english sentence changes during language translation.  
+		a) Sentence Number: 2.64 Geo_chap2_E1.
+		   	English sentence:"This range consists of the famous valley of Kashmir, the Kangra and Kullu Valley in Himachal Pradesh."
+        	Hindi sentence: इसी शृङ्खला में कश्मीर की घाटी तथा हिमाचल के काङ्गडा एवं कुल्लू की घाटियाँ स्थित हैं .
+		   	Construction: ','(comma) is doing task for 'तथा' in hindi
+
+    H CONSTRUCTION: Construction of hindi sentence changes during language translation.
+		a) Sentence Number: 2.64 Geo_chap2_E1.
+		   	English sentence:"This range consists of the famous valley of Kashmir, the Kangra and Kullu Valley in Himachal Pradesh."
+        	Hindi sentence: इसी शृङ्खला में कश्मीर की घाटी तथा हिमाचल के काङ्गडा एवं कुल्लू की घाटियाँ स्थित हैं .
+		   	Construction: 'तथा' in hindi does not have any word equivalent in english.
+  		 
+   
+  	ANUSAARAKA ISSUE: It is observed from the Kth layer. These issues involve the mis-construct of the tool while placing the translated words in the Kth layer.
+		a) Sentence Number: 2.39 Geo_chap2_E1.
+		   Anusaaraka Issue: 'From the view point of geology' is translated to दृष्टिकोण मतलब से, 'form' is aligned with बनाते  हुए
+
+  	SENTENCE ALIGNMENT OBSERVATION: Alignment of the sentence in each layer is observed.
+		a) Sentence Number: 2.39 Geo_chap2_E1.
+		   Sentence alignment: Wrong alignment('From the view point of geology' is not properly aligned in Pth layer)
+
+  	Pth OBSERVATION:Observe the Pth layer.
+		a) Sentence Number: 2.39 Geo_chap2_E1.
+		   Observation: Wrong alignment-(भूगर्भ वैज्ञानिकों के अनुसार  is aligned with-geology)
+
+#################################################################################################################################################  
+
+3.SOLUTION OF PARSER:
+		 A parser creates a parse tree for a sentences in which each word is defined as an object. Each object represents some additional information about each word that includes Parts Of Speech(POS), word ID, parse ID, A parse tree represents the root word for every sentence, and the relationship among every word to one another prrsent in the sentence. This makes it easier for the tool to form a sentence depending on the construct of each woed or chunk of words. 
+		 
+		 EX.English Sentence: The Indus and its tributaries – the Jhelum, the Chenab, the Ravi,the Beas and the Satluj originate in the Himalaya.
+  		    Hindi Sentence  :सिंधु तथा इसकी सहायक नदियाँ झेलम , चेनाब , रावी , ब्यास तथा सतलुज हिमालय से निकलती हैं .(Ex. reffer this sentence from 			    Geo_chap2_E2 sentence no.2.99)
+   		 
+		 =>Solution of Parser-Run parser again by changing  the POS of originate to VERB as originate is never occured as NOUN. 
+
+#################################################################################################################################################   
+4.Solution by use/modification/addition of dictionary: 
+		Some of the words are not present in dictionary or are present but having incorrect meaning or that word is having multiple meanings then in that case dictonary is updated or rules are written to replace or WSD rules are written in clips. For the dictionary issues we modify, add the words in dictonary.
+    
